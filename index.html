@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="insurance from invasion of alians">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="shortcut icon" href="img/logo_GalacticShield.png" type="image/x-icon">
+
+    <title>GalacticShield - Poistenie pred inváziou mimozemšťanov</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/pngLogo.png" alt="" class="header_logo">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Domov</a></li>
+                    <li><a href="#benefits">Benefity</a></li>
+                    <li><a href="#working">Ako fungujeme?</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero_content">
+                    <h1>Protect<br> what matters - <br /> even from<br> aliens</h1>
+                    <button href="#contact" class="hero_btn" id="openPopup">Get a insurance</button>
+
+                    <div id="popup">
+                        <div class="popup-content">
+                            <h2>Reminder</h2>
+                            <p>Stay informed about our company with this website.</p>
+                            <div>
+                                <button id="okBtn">OK</button>
+                                <button id="cancelBtn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <div class="container">
+                <div class="benefits_content">
+                    <div class="benefit">
+                        <span class="material-symbols-outlined">
+                            shield
+                        </span>
+                        <h2>Total coverage</h2>
+                        <p>Our polices protect against all types extraaliness encounters.</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span class="material-symbols-outlined">
+                            rocket_launch
+                        </span>
+                        <h2>Alian expertise</h2>
+                        <p>Rely on our team of professionals with years of experience.</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span class="material-symbols-outlined">
+                            work
+                        </span>
+                        <h2>Flexible plans</h2>
+                        <p>Choose from variety of insurance options tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="countdown" class="container">
+            <h2>Sale ends in ...</h2>
+            <div class="timer">
+                <div class="time">
+                    <h3 id="days"></h3>
+                    <p>days</p>
+                </div>
+                <div class="time">
+                    <h3 id="hours"></h3>
+                    <p>hours</p>
+                </div>
+                <div class="time">
+                    <h3 id="minutes"></h3>
+                    <p>minutes</p>
+                </div>
+                <div class="time">
+                    <h3 id="seconds"></h3>
+                    <p>seconds</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="color_display" class="container">
+            <h2>
+                Background: <span id="current_color">#ffffff</span>
+            </h2>
+            <button id="new_color_button" class="hero_btn color_btn">New Colour!?</button>
+            <button id="reset_color_button" class="hero_btn color_btn">Reset color</button>
+        </section>
+
+        <div class="container two-sections">
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <img src="./img/testimonial_man.png" alt="" class="testimonial_pic">
+                    <p>
+                        "I slept through the Martian raid thanks to Galactic Shield."
+                    </p>
+                </div>
+            </section>
+
+            <section id="working">
+                <h2>How it works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>1</h3>
+                        <span class="material-symbols-outlined">
+                            shield
+                        </span>
+                        <p>Choose your plan</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>2</h3>
+                        <span class="material-symbols-outlined">
+                            house_with_shield
+                        </span>
+                        <p>Activate shild protocol</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>3</h3>
+                        <span class="material-symbols-outlined">
+                            airline_seat_flat
+                        </span>
+                        <p>Sleep peacefully</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="cite-map">
+                    <img src="./img/pngLogo.png" alt="" class="header_logo">
+                    <nav>
+                        <ul>
+                            <li><a href="#hero">Domov</a></li>
+                            <li><a href="#benefits">Benefity</a></li>
+                            <li><a href="#working">Ako fungujeme?</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="contacts">
+                    <h2>Contacts</h2>
+                    <p>Phone numbers</p>
+                    <ul>
+                        <li>+ 421 95 193 5705</li>
+                        <li>+ 380 68 901 6415</li>
+                    </ul>
+                    <p>Emails</p>
+                    <ul>
+                        <li>galaxyshield@help.com</li>
+                        <li>galaxyshield@info.com</li>
+                        <li>galaxyshield@supprt.com</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">© Copyright 2025 - Andrii Kushch</p>
+        </footer>
+
+    </main>
+
+    <script src="popup.js"></script>
+    <script src="timer.js"></script>
+    <script src="color.js"></script>
+</body>
+
+</html>
